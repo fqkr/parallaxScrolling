@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    body{
+      margin:0;
+    }
+    .scene.one{
+      background-image: url(img/1.jpg);
+    }
+    .scene.two{
+      background-image: url(img/2.jpg);
+    }
+    .scene.three{
+      background-image: url(img/3.jpg);
+    }
+    .scene{
+      height:100vh;
+      overflow: hidden; /*자식콘텐트가 부모콘텐트보다 클 경우 넘어가지 않도록*/
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .scene header{
+      color: white;
+      max-width:50%;
+      position: relative;
+      left:50%;
+      top:50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .scene header h1{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .scene header h1:after{
+      content:'';
+      border-bottom: 1px solid white;
+      width:8rem;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+  </style>
+  <body>
+    <section class="scene one">
+      <header>
+        <h1>우주 정거장</h1>
+        기차가 어둠을 헤치고 은하수를 건너면
+      </header>
+    </section>
+    <section class="scene two">
+      <header>
+        <h1>행복</h1>
+        우주 정거장에 햇빛이 쏟아지네
+      </header>
+    </section>
+    <section class="scene three">
+      <header>
+        <h1>엄마</h1>
+        행복 찾는 나그네의 눈동자는 불타오르고
+      </header>
+    </section>
+  </body>
+</html>
